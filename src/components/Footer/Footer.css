@@ -1,0 +1,29 @@
+.footer{
+    padding: 7em 0
+}
+
+.block-footer-widget h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #ccc !important
+}
+
+body {
+    line-height: 1.8;
+    font-size: 15px;
+    color: #999
+}
+
+a {
+    text-decoration: none;
+    transition: .3s all ease;
+    color: #000;
+}
+
+.block-social li {
+    display: inline;
+}
+
+svg {
+    margin-bottom: 5px;
+}

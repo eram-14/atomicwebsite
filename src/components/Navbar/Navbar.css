@@ -1,0 +1,192 @@
+.templateux-navbar {
+    width: 100%;
+    position: relative;
+    background-color: #0389ff;
+    padding: 10px 0
+}
+
+@media (min-width:768px) {
+    .templateux-navbar {
+        position: absolute;
+        background-color: transparent;
+        padding: 40px 0
+    }
+}
+
+.templateux-navbar .templateux-logo {
+    margin-top: 10px
+}
+
+.templateux-navbar .templateux-logo a {
+    font-size: 22px;
+    color: #fff
+}
+
+.templateux-navbar .templateux-toggle {
+    outline: none !important;
+    display: none
+}
+
+.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner,
+.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:after,
+.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:before {
+    background-color: #fff
+}
+
+.templateux-navbar .templateux-toggle.templateux-toggle-light:hover {
+    opacity: 1
+}
+
+.templateux-navbar .templateux-menu {
+    float: right
+}
+
+.templateux-navbar .templateux-menu a {
+    text-decoration: none;
+    color: #fff
+}
+
+.templateux-navbar .templateux-menu a:active,
+.templateux-navbar .templateux-menu a:focus,
+.templateux-navbar .templateux-menu a:hover {
+    color: #fff
+}
+
+.templateux-navbar .templateux-menu>li {
+    float: none;
+    display: inline-block;
+    line-height: 1.5
+}
+
+.templateux-navbar .templateux-menu>li.active>a {
+    color: #fff
+}
+
+.templateux-navbar .templateux-menu>li>a {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1em;
+    padding: 20px 5px
+}
+
+@media (min-width:992px) {
+    .templateux-navbar .templateux-menu>li>a {
+        padding: 20px 15px
+    }
+}
+
+.templateux-navbar .templateux-menu>li>a.sf-with-ul {
+    position: relative;
+    padding-right: 20px
+}
+
+.templateux-navbar .templateux-menu>li>a.sf-with-ul:after {
+    font-family: 'icomoon';
+    top: 50%;
+    right: 0;
+    content: "\e313";
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.templateux-navbar .templateux-menu>li>ul {
+    padding: 20px 26px
+}
+
+.templateux-navbar .templateux-menu>li>ul>li>ul {
+    padding: 26px
+}
+
+.templateux-navbar .templateux-menu>li>ul>li>ul>li>ul {
+    padding: 26px
+}
+
+.templateux-navbar .templateux-menu ul {
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2)
+}
+
+.templateux-navbar .templateux-menu ul a {
+    font-size: 14px;
+    color: #999
+}
+
+.templateux-navbar .templateux-menu ul a:active,
+.templateux-navbar .templateux-menu ul a:focus,
+.templateux-navbar .templateux-menu ul a:hover {
+    color: #000
+}
+
+.templateux-navbar .templateux-menu ul a.sf-with-ul {
+    position: relative
+}
+
+.templateux-navbar .templateux-menu ul a.sf-with-ul:after {
+    font-family: 'icomoon';
+    top: 50%;
+    right: 0;
+    content: "\e315";
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+.templateux-navbar .templateux-menu li.sfHover>a {
+    color: #fff
+}
+
+.templateux-navbar .templateux-menu ul {
+    text-align: left;
+    min-width: 12em;
+    background: #fff
+}
+
+.templateux-navbar .templateux-menu ul li {
+    padding: 4px 0
+}
+
+.templateux-navbar .templateux-menu ul li.sfHover>a {
+    color: #000
+}
+
+.templateux-navbar.dark .templateux-logo {
+    margin-top: 10px
+}
+
+.templateux-navbar.dark .templateux-logo a {
+    font-size: 22px;
+    color: #fff
+}
+
+@media (min-width:768px) {
+    .templateux-navbar.dark .templateux-logo a {
+        color: #000
+    }
+}
+
+.templateux-navbar.dark .templateux-menu {
+    float: right
+}
+
+.templateux-navbar.dark .templateux-menu a {
+    text-decoration: none;
+    color: gray
+}
+
+.templateux-navbar.dark .templateux-menu a:active,
+.templateux-navbar.dark .templateux-menu a:focus,
+.templateux-navbar.dark .templateux-menu a:hover {
+    color: #999
+}
+
+.templateux-navbar.dark .templateux-menu li.active>a {
+    color: #000
+}
+
+.templateux-navbar.dark li.sfHover>a {
+    color: #999
+}

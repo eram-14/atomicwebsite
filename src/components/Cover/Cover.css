@@ -1,0 +1,25 @@
+.templateux-cover {
+    background-size: cover
+}
+
+.templateux-cover,
+.templateux-cover .row {
+    min-height: 800px
+}
+
+.templateux-cover .heading {
+    font-size: 30px;
+    line-height: 1.5;
+    color: #000
+}
+
+@media (min-width:768px) {
+    .templateux-cover .heading {
+        font-size: 50px
+    }
+}
+
+.templateux-cover .lead {
+    color: #999;
+    line-height: 1.8
+}

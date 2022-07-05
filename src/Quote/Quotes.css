@@ -1,0 +1,16 @@
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    left: 0;
+    width: 100%;
+    text-align: center;
+    bottom: 24px;
+    position: relative;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: var(--swiper-pagination-bullet-opacity, 1);
+    background:black;
+}
+
