@@ -1,5 +1,6 @@
 .block-thumbnail-1 {
     height: 500px;
+    background-color: red;
     display: block;
     background-size: cover;
     background-position: center center;

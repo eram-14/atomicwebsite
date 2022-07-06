@@ -22,18 +22,19 @@
     color: #fff
 }
 
-.templateux-navbar .templateux-toggle {
+
+.templateux-navbar .templateux-toggle{
     outline: none !important;
     display: none
 }
 
-.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner,
-.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:after,
-.templateux-navbar .templateux-toggle.templateux-toggle-light .hamburger-inner:before {
+.templateux-navbar .templateux-toggle .resp.templateux-toggle-light .hamburger-inner,
+.templateux-navbar .templateux-toggle .resp.templateux-toggle-light .hamburger-inner:after,
+.templateux-navbar .templateux-toggle .resp.templateux-toggle-light .hamburger-inner:before {
     background-color: #fff
 }
 
-.templateux-navbar .templateux-toggle.templateux-toggle-light:hover {
+.templateux-navbar .templateux-toggle .resp.templateux-toggle-light:hover {
     opacity: 1
 }
 
@@ -54,7 +55,7 @@
 
 .templateux-navbar .templateux-menu>li {
     float: none;
-    display: inline-block;
+    display: inline-grid;
     line-height: 1.5
 }
 
@@ -80,27 +81,13 @@
     padding-right: 20px
 }
 
-.templateux-navbar .templateux-menu>li>a.sf-with-ul:after {
-    font-family: 'icomoon';
+.arrowdown {
     top: 50%;
     right: 0;
-    content: "\e313";
     position: absolute;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%)
-}
-
-.templateux-navbar .templateux-menu>li>ul {
-    padding: 20px 26px
-}
-
-.templateux-navbar .templateux-menu>li>ul>li>ul {
-    padding: 26px
-}
-
-.templateux-navbar .templateux-menu>li>ul>li>ul>li>ul {
-    padding: 26px
 }
 
 .templateux-navbar .templateux-menu ul {
@@ -117,39 +104,6 @@
 .templateux-navbar .templateux-menu ul a:active,
 .templateux-navbar .templateux-menu ul a:focus,
 .templateux-navbar .templateux-menu ul a:hover {
-    color: #000
-}
-
-.templateux-navbar .templateux-menu ul a.sf-with-ul {
-    position: relative
-}
-
-.templateux-navbar .templateux-menu ul a.sf-with-ul:after {
-    font-family: 'icomoon';
-    top: 50%;
-    right: 0;
-    content: "\e315";
-    position: absolute;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%)
-}
-
-.templateux-navbar .templateux-menu li.sfHover>a {
-    color: #fff
-}
-
-.templateux-navbar .templateux-menu ul {
-    text-align: left;
-    min-width: 12em;
-    background: #fff
-}
-
-.templateux-navbar .templateux-menu ul li {
-    padding: 4px 0
-}
-
-.templateux-navbar .templateux-menu ul li.sfHover>a {
     color: #000
 }
 
@@ -187,6 +141,92 @@
     color: #000
 }
 
-.templateux-navbar.dark li.sfHover>a {
-    color: #999
+.sf-menu,
+.sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.templateux-navbar.dark .templateux-menu {
+    float: right;
+}
+
+.templateux-navbar .templateux-menu>li {
+    float: none;
+    display: inline-flex;
+    line-height: 1.5;
+}
+
+.sf-menu li {
+    position: relative;
+    line-height: 1.8rem;
+}
+
+.sf-menu,
+.sf-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.templateux-navbar .templateux-menu>li>ul {
+    padding: 20px 26px;
+}
+
+.templateux-navbar .templateux-menu ul {
+    text-align: left;
+    min-width: 12em;
+    background: #fff;
+}
+
+.sf-menu li.sfHover>ul,
+.sf-menu li:hover>ul {
+    display: block;
+}
+
+.templateux-navbar .templateux-menu ul {
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.templateux-navbar .templateux-menu ul li ul li{
+   padding:4px 15px ;
+   line-height: 1.5rem;
+}
+
+ul.submenu {
+    position: absolute;
+    top: 105%;
+    left: 3%;
+    border: none;
+    max-height: 200%;
+    max-width: 10%;
+}
+
+ul.submenu2 {
+    position: absolute;
+    top: 3%;
+    left: 120%;
+    border: none;
+}
+
+ul.submenu3 {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    border: none;
+    max-width: 10%;
+}
+
+@media (min-width:780px) {
+    .resp{
+        display: none !important;
+    }
+}
+
+
+ul.cloned-templateux-menu li {   
+    list-style: none;   
 }
