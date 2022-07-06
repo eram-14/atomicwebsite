@@ -1,3 +1,27 @@
+.templateux-section {
+    padding: 7em 0
+}
+
+.testimonial-wrap .quote {
+    line-height: 1;
+    position: relative;
+    font-size: 100px;
+    color: #000;
+    text-align: center
+}
+
+.block-testomonial {
+    text-align: center
+}
+
+.block-testomonial p {
+    font-size: 18px;
+    color: #000;
+    line-height: 2
+}
+
+
+
 .swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,

@@ -1,38 +1,84 @@
-/* .App {
-  text-align: center;
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,400,700);
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@-ms-viewport {
+  width: device-width
+}
+
+footer,
+header,
+main,
+nav {
+  display: block
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+@media (min-width:576px) {
+  .container {
+    max-width: 540px
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (min-width:768px) {
+  .container {
+    max-width: 720px
+  }
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width:992px) {
+  .container {
+    max-width: 960px
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width:1200px) {
+  .container {
+    max-width: 1140px
   }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+body {
+  line-height: 1.8;
+  font-size: 15px;
+  color: #999
+}

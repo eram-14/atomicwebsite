@@ -23,3 +23,32 @@
     color: #999;
     line-height: 1.8
 }
+
+.templateux-block-play {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid rgba(0, 0, 0, .1);
+    position: relative;
+    border-radius: 50%;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+    top: 50%
+}
+
+.templateux-block-play:hover {
+    width: 90px;
+    height: 90px;
+}
+
+a:hover {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+@media (min-width:992px) {
+    .templateux-block-play {
+        top: 0
+    }
+}

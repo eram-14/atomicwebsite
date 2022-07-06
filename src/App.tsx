@@ -7,17 +7,18 @@ import ImageGallary from './components/ImageGallary/ImageGallary'
 import MidSection from './components/MidSection/MidSection'
 import MoreFeatures from './components/MoreFeatures/MoreFeatures'
 import Navbar from './components/Navbar/Navbar'
-import Quote from './Quote/Quote'
+import Quote from './components/Quote/Quote'
+import './App.css'
 
 function App() {
   return (
     <div className='main'>
-      <Navbar/>
-      <Cover/>
-      <MidSection/>
-      <GoodDesign/>
-      <MoreFeatures/>
-      <ImageGallary/>
+      <Navbar />
+      <Cover />
+      <MidSection />
+      <GoodDesign />
+      <MoreFeatures />
+      <ImageGallary />
       <BgPrimary/>
       <Quote/>
       <Footer/>

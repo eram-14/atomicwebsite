@@ -1,0 +1,31 @@
+.templateux-section {
+    padding: 7em 0
+}
+
+.media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.block-icon-1 .icon span {
+    font-size: 80px;
+    color: #d6dadd
+}
+
+.block-icon-1 .icon.small span {
+    font-size: 40px
+}
+
+.block-icon-1 h3 {
+    font-size: 18px
+}
