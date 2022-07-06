@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import './GoodDesign.css'
 import Slider from './Slider'
 
 
 function GoodDesign() {
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <div className="templateux-section">
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-md-12 block-heading-wrap aos-init aos-animate" data-aos="fade-up">
+                    <div className="col-md-12 block-heading-wrap " data-aos="fade-up">
                         <h2 className="heading mb-5 text-center">Good Design is a Good Start</h2>
                     </div>
                 </div>
-                <div className="row mb-5 aos-init aos-animate" data-aos="fade-up">
+                <div className="row mb-5 " data-aos="fade-up">
                     <div className="col-md-6">
                         <p className="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. <a href="#">Separated they live in Bookmarksgrove</a> right at the coast of the Semantics, a large language ocean.</p>
                     </div>

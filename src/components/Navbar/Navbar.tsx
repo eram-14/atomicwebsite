@@ -1,10 +1,18 @@
-import React from 'react'
-// import'./Navbar.css'
+import React, { useEffect } from 'react'
+import'./Navbar.css'
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function Navbar() {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <header className="templateux-navbar dark" role="banner">
-      <div className="container aos-init aos-animate" data-aos="fade-down">
+      <div className="container" data-aos="fade-down">
         <div className="row">
           <div className="col-3 templateux-logo">
             <a href="index.html" className="animsition-link">Atomic</a>

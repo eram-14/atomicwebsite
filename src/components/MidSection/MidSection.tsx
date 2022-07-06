@@ -1,8 +1,10 @@
-import React from 'react'
-// import './MidSection.css'
 import { IoBulbOutline } from "react-icons/io5";
 import { IoInfiniteOutline } from "react-icons/io5";
 import { IoIosNutrition } from "react-icons/io";
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import './MidSection.css'
 
 function MidSection() {
   return (    
@@ -11,7 +13,7 @@ function MidSection() {
               <div className="row">
                   <div className="col-md-12 templateux-overlap">
                       <div className="row">
-                          <div className="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="600">
+                          <div className="col-md-4" data-aos="fade-up" data-aos-delay="600">
                               <div className="media block-icon-1 d-block text-left">
                                   <div className="icon mb-3"><span ><IoBulbOutline/></span></div>
                                   <div className="media-body">
@@ -20,7 +22,7 @@ function MidSection() {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="700">
+                          <div className="col-md-4" data-aos="fade-up" data-aos-delay="700">
                               <div className="media block-icon-1 d-block text-left">
                                   <div className="icon mb-3"><span ><IoIosNutrition/></span></div>
                                   <div className="media-body">
@@ -29,7 +31,7 @@ function MidSection() {
                                   </div>
                               </div>
                           </div>
-                          <div className="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="800">
+                          <div className="col-md-4" data-aos="fade-up" data-aos-delay="800">
                               <div className="media block-icon-1 d-block text-left">
                                   <div className="icon mb-3"><span><IoInfiniteOutline/></span></div>
                                   <div className="media-body">

@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import "./BgPrimary.css";
 import CountUp from 'react-countup';
 
-function BgPrimary() {
-   
+function BgPrimary() {   
 
     return (
         <div className="templateux-section bg-primary" id="templateux-counter-section">

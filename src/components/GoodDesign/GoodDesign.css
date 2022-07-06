@@ -1,3 +1,12 @@
+.templateux-section {
+    padding: 7em 0
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 300
+}
+
 .slider .swiper-slide img {
     display: block;
     width: 100%;

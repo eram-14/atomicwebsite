@@ -1,0 +1,116 @@
+.block-thumbnail-1 {
+    height: 500px;
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    position: relative
+}
+
+.block-thumbnail-1.height-sm {
+    height: 350px
+}
+
+.block-thumbnail-1:hover {
+    opacity: 1
+}
+
+.block-thumbnail-1:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 2;
+    opacity: .1;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+.block-thumbnail-1 .block-thumbnail-content {
+    position: absolute;
+    top: 50px;
+    z-index: 3;
+    left: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease
+}
+
+.block-thumbnail-1 .block-thumbnail-content h2 {
+    font-size: 22px;
+    color: #fff !important
+}
+
+.block-thumbnail-1 .block-thumbnail-content .post-meta {
+    opacity: .3;
+    color: #fff !important
+}
+
+.block-thumbnail-1:hover {
+    opacity: 1
+}
+
+.block-thumbnail-1:hover:before {
+    opacity: .5
+}
+
+.block-thumbnail-1:hover .block-thumbnail-content {
+    top: 20px;
+    opacity: 1;
+    visibility: visible
+}
+
+.block-thumbnail-1.one-whole {
+    width: 100%
+}
+
+.block-thumbnail-1.one-third {
+    width: 100%
+}
+
+@media (min-width:576px) {
+    .block-thumbnail-1.one-third {
+        width: 50%
+    }
+}
+
+@media (min-width:768px) {
+    .block-thumbnail-1.one-third {
+        width: 33.333%
+    }
+}
+
+.block-thumbnail-1.two-third {
+    width: 100%
+}
+
+@media (min-width:576px) {
+    .block-thumbnail-1.two-third {
+        width: 50%
+    }
+}
+
+@media (min-width:768px) {
+    .block-thumbnail-1.two-third {
+        width: 66.666%
+    }
+}
+
+.block-thumbnail-1.show-text:before {
+    opacity: .3
+}
+
+.block-thumbnail-1.show-text .block-thumbnail-content {
+    opacity: 1 !important;
+    visibility: visible !important;
+    top: 20px !important
+}
+
+.block-thumbnail-1.show-text:hover:before {
+    opacity: .7 !important
+}

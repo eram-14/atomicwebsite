@@ -69,8 +69,7 @@ function Footer() {
         </div>
         <div className="row pt-5 text-left">
           <div className="col-md-12 text-left"><p>
-
-            Copyright ©<script>document.write(new Date().getFullYear());</script>2022 All rights reserved | This template is made with <FaHeart/> by <a href="https://colorlib.com" target="_blank" className="text-primary">Colorlib</a>
+            Copyright ©2022 All rights reserved | This template is made with <FaHeart/> by <a href="https://colorlib.com" target="_blank" className="text-primary">Colorlib</a>
 
           </p></div>
         </div>

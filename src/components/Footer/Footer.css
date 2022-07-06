@@ -1,4 +1,4 @@
-.footer{
+.footer {
     padding: 7em 0
 }
 
@@ -6,6 +6,11 @@
     text-transform: uppercase;
     font-size: 15px;
     color: #ccc !important
+}
+
+.block-social li {
+    display: inline-block;
+    font-size: 18px
 }
 
 body {
@@ -26,4 +31,19 @@ a {
 
 svg {
     margin-bottom: 5px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0389ff;
+    border-color: #0389ff;
+    border-radius: 0;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem 1.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
 }

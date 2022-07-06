@@ -1,0 +1,26 @@
+.templateux-section {
+    padding: 7em 0
+}
+
+.bg-primary {
+    background-color: #0389ff !important
+}
+
+a.bg-primary:focus,
+a.bg-primary:hover,
+button.bg-primary:focus,
+button.bg-primary:hover {
+    background-color: #006ecf !important
+}
+
+.templateux-counter .templateux-number {
+    display: block;
+    font-size: 50px;
+    color: #fff
+}
+
+.templateux-counter .templateux-label {
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .5
+}
