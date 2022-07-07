@@ -1,0 +1,16 @@
+.templateux-cover,
+.templateux-cover .row {
+    min-height: 800px;
+}
+
+.templateux-cover {
+    background-size: cover;
+}
+
+h6 {
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: 400;
+    font-size: 17px;
+    color: #b3b3b3;
+}

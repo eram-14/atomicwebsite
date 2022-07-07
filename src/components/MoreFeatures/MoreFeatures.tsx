@@ -9,15 +9,28 @@ import { IoMdLock } from "react-icons/io";
 import { IoVideocamOutline } from "react-icons/io5";
 import { ImLoop2 } from "react-icons/im";
 
+type propsFeatures={
+    heading?: string,
+    subheading?:string,
+    bg?:string
+}
 
-function MoreFeatures() {
+
+function MoreFeatures({ heading, subheading,bg }:propsFeatures) {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
+
+    var color='red'
   return (
-      <div className="templateux-section bg-light">
+      <div className={`templateux-section ${bg}`}>
           <div className="container">
+              <div className="row">
+                  <div className="col-md-12 block-heading-wrap aos-init aos-animate" data-aos="fade-up">
+                      <h2 style={{color:'black'}} className="heading mb-5 text-center">{heading}</h2>
+                  </div>
+              </div>
               <div className="row mb-5">
                   <div className="col-md-4 mb-4" data-aos="fade-up">
                       <div className="media block-icon-1 d-block text-center">
@@ -76,7 +89,7 @@ function MoreFeatures() {
               </div>
               <div className="row">
                   <div className="col-md-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                      <p><a href="#" className="btn btn-black py-3 px-4">More Features</a></p>
+                      <p><a href="#" className="btn btn-black py-3 px-4">{subheading}</a></p>
                   </div>
               </div>
           </div>

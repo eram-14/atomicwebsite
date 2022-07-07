@@ -1,0 +1,25 @@
+.block-person-1 img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 40px auto;
+}
+
+.block-person-1 .block-content .heading {
+    font-size: 18px;
+}
+
+
+h2,
+h3
+ {
+    color: #000;
+}
+
+.block-person-1 .block-content .subheading {
+    font-size: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

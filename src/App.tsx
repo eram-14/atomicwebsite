@@ -1,27 +1,19 @@
-import React from 'react'
-import BgPrimary from './components/BgPrimary/BgPrimary'
-import Cover from './components/Cover/Cover'
 import Footer from './components/Footer/Footer'
-import GoodDesign from './components/GoodDesign/GoodDesign'
-import ImageGallary from './components/ImageGallary/ImageGallary'
-import MidSection from './components/MidSection/MidSection'
-import MoreFeatures from './components/MoreFeatures/MoreFeatures'
 import Navbar from './components/Navbar/Navbar'
-import Quote from './components/Quote/Quote'
 import './App.css'
+import Home from './pages/Home'
+import { Route, Routes } from 'react-router-dom'
+import About from './pages/About'
 
-function App() {
+const App = () => {
   return (
     <div className='main'>
       <Navbar />
-      <Cover />
-      <MidSection />
-      <GoodDesign />
-      <MoreFeatures />
-      <ImageGallary />
-      <BgPrimary/>
-      <Quote/>
-      <Footer/>
+      <Routes>
+        <Route path='' element={<Home />} />
+        <Route path='about' element={<About />} />
+      </Routes>
+      <Footer />
     </div>
   )
 }

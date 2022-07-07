@@ -8,6 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import DropDownResp from './DropDownResp';
+import { Link } from 'react-router-dom';
 
 
 
@@ -55,9 +56,9 @@ function Navbar() {
 
               <ul className="sf-menu templateux-menu d-none d-md-block sf-js-enabled sf-arrows">
                 <li className="active">
-                  <a href="index.html" className="animsition-link">Home</a>
+                  <Link to="/" className="animsition-link">Home</Link>
                 </li>
-                <li><a href="about.html" className="animsition-link">About</a></li>
+                <li><Link to='/about' className="animsition-link">About</Link></li>
                 <li
                   onMouseEnter={() => setShow(true)}
                   onMouseLeave={drop1}

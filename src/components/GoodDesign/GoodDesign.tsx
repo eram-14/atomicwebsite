@@ -15,7 +15,7 @@ function GoodDesign() {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-md-12 block-heading-wrap " data-aos="fade-up">
-                        <h2 className="heading mb-5 text-center">Good Design is a Good Start</h2>
+                        <h2 style={{color:'black'}} className="heading mb-5 text-center">Good Design is a Good Start</h2>
                     </div>
                 </div>
                 <div className="row mb-5 " data-aos="fade-up">
