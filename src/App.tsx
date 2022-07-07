@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom'
 import About from './pages/About'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import Blog from './pages/Blog'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path='about' element={<About />} />
         <Route path='gallery' element={<Gallery />} />
         <Route path='contact' element={<Contact />} />
+        <Route path='blog' element={<Blog />} />
       </Routes>
       <Footer />
     </div>

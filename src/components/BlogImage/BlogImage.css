@@ -1,0 +1,55 @@
+.custom button {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50% !important;
+    font-size: 16px;
+    background: #fff;
+    border-color: rgb(233, 228, 228);
+    color: #0389ff;
+}
+
+.custom .active {
+    background: #0389ff;
+    border-color: rgb(233, 228, 228);
+    color: #fff;
+}
+
+/* 
+.custom button {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50% !important;
+    font-size: 16px;
+    background: #0389ff;
+    color: #fff;
+    border-color: #0389ff;
+} */
+
+
+.custom .prev {
+    float: left;
+}
+
+.custom .next {
+    float: right;
+}
+
+.custom button {
+    display: inline-block;
+}
+
+.custom {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}

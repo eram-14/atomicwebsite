@@ -82,7 +82,11 @@ function Navbar() {
                 <li><NavLink style={({ isActive }) => ({
                   color: isActive ? 'black' : 'gray',
                 })} to='/gallery' className="animsition-link">Gallery</NavLink></li>
-                <li><a href="blog.html" className="animsition-link">Blog</a></li>
+                <li><NavLink
+                  style={({ isActive }) => ({
+                    color: isActive ? 'black' : 'gray',
+                  })}
+                  to='/blog' className="animsition-link">Blog</NavLink></li>
                 <li><NavLink
                   style={({ isActive }) => ({
                     color: isActive ? 'black' : 'gray',
