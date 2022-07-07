@@ -55,7 +55,7 @@ function Footer() {
               </div>
               <div className="col-md-3">
                 <div className="block-footer-widget">
-                  <a href="#" className="btn btn-primary mb-3">Download for free</a>
+                  <a href="#"  className="btn btndown btn-primary mb-3">Download for free</a>
                   <p>Connect With Us</p>
                   <ul className="list-unstyled block-social">
                     <li><a href="#" className="p-1"><span><FaFacebookSquare/></span></a></li>
