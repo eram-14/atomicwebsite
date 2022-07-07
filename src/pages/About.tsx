@@ -1,5 +1,5 @@
 import React from 'react'
-import CoverAbout from '../components/CoverAbout/CoverAbout'
+import CoverCommon from '../components/CoverCommon/CoverCommon'
 import GoodDesign from '../components/GoodDesign/GoodDesign'
 import GoodTeam from '../components/GoodTeam/GoodTeam'
 import MoreFeatures from '../components/MoreFeatures/MoreFeatures'
@@ -7,7 +7,7 @@ import MoreFeatures from '../components/MoreFeatures/MoreFeatures'
 const About = () => {
   return (
     <>
-      <CoverAbout/>
+      <CoverCommon coln='col-md-8' heading='About' subheading='When she reached the first hills of the italic mountains.'/>
       <GoodDesign/>
       <GoodTeam />
       <MoreFeatures heading='Features' />

@@ -8,7 +8,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 
 import DropDownResp from './DropDownResp';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -55,15 +55,19 @@ function Navbar() {
               </div>
 
               <ul className="sf-menu templateux-menu d-none d-md-block sf-js-enabled sf-arrows">
-                <li className="active">
-                  <Link to="/" className="animsition-link">Home</Link>
+                <li className="">
+                  <NavLink style={({ isActive }) => ({
+                    color: isActive ? 'black' : 'gray',
+                  })}  to="/" className="animsition-link">Home</NavLink>
                 </li>
-                <li><Link to='/about' className="animsition-link">About</Link></li>
+                <li><NavLink style={({ isActive }) => ({
+                  color: isActive ? 'black' : 'gray',
+                })}  to='/about' className="animsition-link">About</NavLink></li>
                 <li
-                  onMouseEnter={() => setShow(true)}
-                  onMouseLeave={drop1}
+                  
                 >
-                  <a href="services.html" className="animsition-link sf-with-ul">Services<span><FaAngleDown className='arrowdown' /></span></a>
+                  <a href="services.html" className="animsition-link sf-with-ul">Services<span onMouseEnter={() => setShow(true)}
+                    onMouseLeave={drop1}><FaAngleDown className='arrowdown' /></span></a>
                   {show ?
                     <>
                       <ul className='submenu'>
@@ -101,7 +105,9 @@ function Navbar() {
                       </ul>
                     </> : null}
                 </li>
-                <li><a href="gallery.html" className="animsition-link">Gallery</a></li>
+                <li><NavLink style={({ isActive }) => ({
+                  color: isActive ? 'black' : 'gray',
+                })} to='/gallery' className="animsition-link">Gallery</NavLink></li>
                 <li><a href="blog.html" className="animsition-link">Blog</a></li>
                 <li><a href="contact.html" className="animsition-link">Contact</a></li>
               </ul>
