@@ -32,8 +32,9 @@
     position: absolute;
     border-radius: 50%;
     transition: .2s all ease;
-    top: 42% !important;
+    top: 38% !important;
     color: black;
+    left: 63%;
 }
 
 @media (max-width: 991px) {
