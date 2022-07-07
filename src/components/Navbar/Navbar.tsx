@@ -42,9 +42,11 @@ function Navbar() {
 
               <ul className="sf-menu templateux-menu d-none d-md-block sf-js-enabled sf-arrows">
                 <li className="">
-                  <NavLink style={({ isActive }) => ({
-                    color: isActive ? 'black' : 'gray',
-                  })} to="/" className="animsition-link">Home</NavLink>
+                  <NavLink
+                    style={({ isActive }) => ({
+                      color: isActive ? 'black' : 'gray',
+                    })}
+                    to="/" className="animsition-link">Home</NavLink>
                 </li>
                 <li><NavLink style={({ isActive }) => ({
                   color: isActive ? 'black' : 'gray',
@@ -81,7 +83,11 @@ function Navbar() {
                   color: isActive ? 'black' : 'gray',
                 })} to='/gallery' className="animsition-link">Gallery</NavLink></li>
                 <li><a href="blog.html" className="animsition-link">Blog</a></li>
-                <li><a href="contact.html" className="animsition-link">Contact</a></li>
+                <li><NavLink
+                  style={({ isActive }) => ({
+                    color: isActive ? 'black' : 'gray',
+                  })}
+                  to='/contact' className="animsition-link">Contact</NavLink></li>
               </ul>
             </nav>
           </div>

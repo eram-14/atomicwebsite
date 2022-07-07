@@ -50,3 +50,7 @@ svg {
         white-space: normal;
     }
 }
+
+.pr-md-5 {
+    padding-right: 3rem !important;
+}

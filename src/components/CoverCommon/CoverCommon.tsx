@@ -3,8 +3,8 @@ import React, { useEffect } from 'react'
 import './CoverCommon.css'
 
 type propsCover = {
-    heading?: string,
-    subheading?: string,
+    heading: string,
+    subheading: string,
     coln:string
 }
 
