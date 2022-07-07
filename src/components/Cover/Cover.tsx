@@ -4,9 +4,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import { AiOutlineClose } from "react-icons/ai";
 
-
-function Cover() {
-
+const Cover = () => {
     const [videoModal, setVideoModal] = useState(false);
 
     const showVideoModal = () => {

@@ -6,8 +6,7 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import { FaTwitter } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa';
 
-
-function Footer() {
+const Footer = () => {
   return (
     <footer className="footer bg-light">
       <div className="container">
@@ -55,12 +54,12 @@ function Footer() {
               </div>
               <div className="col-md-3">
                 <div className="block-footer-widget">
-                  <a href="#"  className="btn btndown btn-primary mb-3">Download for free</a>
+                  <a href="#" className="btn btndown btn-primary mb-3">Download for free</a>
                   <p>Connect With Us</p>
                   <ul className="list-unstyled block-social">
-                    <li><a href="#" className="p-1"><span><FaFacebookSquare/></span></a></li>
-                    <li><a href="#" className="p-1"><span><FaTwitter/></span></a></li>
-                    <li><a href="#" className="p-1"><span><FaGithub/></span></a></li>
+                    <li><a href="#" className="p-1"><span><FaFacebookSquare /></span></a></li>
+                    <li><a href="#" className="p-1"><span><FaTwitter /></span></a></li>
+                    <li><a href="#" className="p-1"><span><FaGithub /></span></a></li>
                   </ul>
                 </div>
               </div>
@@ -69,7 +68,7 @@ function Footer() {
         </div>
         <div className="row pt-5 text-left">
           <div className="col-md-12 text-left"><p>
-            Copyright ©2022 All rights reserved | This template is made with <FaHeart/> by <a href="https://colorlib.com" target="_blank" className="text-primary">Colorlib</a>
+            Copyright ©2022 All rights reserved | This template is made with <FaHeart /> by <a href="https://colorlib.com" target="_blank" className="text-primary">Colorlib</a>
 
           </p></div>
         </div>
@@ -79,3 +78,4 @@ function Footer() {
 }
 
 export default Footer
+

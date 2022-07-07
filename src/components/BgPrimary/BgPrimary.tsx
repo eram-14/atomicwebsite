@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react'
-import AOS from 'aos';
+import React from 'react'
 import "aos/dist/aos.css";
 import "./BgPrimary.css";
 import CountUp from 'react-countup';
 
-function BgPrimary() {   
-
+const BgPrimary = () => {
     return (
         <div className="templateux-section bg-primary" id="templateux-counter-section">
             <div className="container">
@@ -20,7 +18,7 @@ function BgPrimary() {
                     </div>
                     <div className="col-md">
                         <div className="templateux-counter text-center">
-                            <span className="templateux-number" data-number="99"><CountUp end={99}/></span>
+                            <span className="templateux-number" data-number="99"><CountUp end={99} /></span>
                             <span className="templateux-label">Number of Projects</span>
                         </div>
                     </div>
@@ -37,3 +35,4 @@ function BgPrimary() {
 }
 
 export default BgPrimary
+

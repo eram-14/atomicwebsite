@@ -39,7 +39,7 @@
 }
 
 .templateux-navbar .templateux-menu {
-    float: right
+    margin-left: 33% !important;
 }
 
 .templateux-navbar .templateux-menu a {
@@ -55,8 +55,9 @@
 
 .templateux-navbar .templateux-menu>li {
     float: none;
-    display: inline-grid;
-    line-height: 1.5
+    display: inline-flex;
+    line-height: 1.5;
+    padding-left: 4px;
 }
 
 .templateux-navbar .templateux-menu>li.active>a {
@@ -122,10 +123,6 @@
     }
 }
 
-.templateux-navbar.dark .templateux-menu {
-    float: right
-}
-
 .templateux-navbar.dark .templateux-menu a {
     text-decoration: none;
     color: gray
@@ -137,19 +134,20 @@
     color: #999
 }
 
+.templateux-navbar .templateux-menu>li>a {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: .1em;
+}
+
+@media (min-width: 992px) {
+    .templateux-navbar .templateux-menu>li>a {
+        padding: 20px 15px;
+    }
+}
+
 .templateux-navbar.dark .templateux-menu li.active>a {
     color: #000
-}
-
-.sf-menu,
-.sf-menu * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.templateux-navbar.dark .templateux-menu {
-    float: right;
 }
 
 .templateux-navbar .templateux-menu>li {
@@ -172,6 +170,7 @@
 
 .templateux-navbar .templateux-menu>li>ul {
     padding: 20px 26px;
+    margin: -10px 15px;
 }
 
 .templateux-navbar .templateux-menu ul {
@@ -182,8 +181,63 @@
 
 .sf-menu li.sfHover>ul,
 .sf-menu li:hover>ul {
-    display: block;
+    opacity: 1;
 }
+
+ul.submenu {
+    position: absolute;
+    top: 105%;
+    left: 3%;
+    border: none;
+    max-height: 200%;
+    max-width: 10%;
+    opacity: 0;
+}
+
+ul.submenu2 {
+    position: absolute;
+    top: 3%;
+    left: 120%;
+    border: none;
+    padding: 13px 0px;
+    opacity: 0;
+}
+
+ul.submenu3 {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    border: none;
+    padding: 13px 0px;
+    max-width: 10%;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive navbar */
 
 .templateux-navbar .templateux-menu ul {
     border-radius: 4px;
@@ -194,30 +248,6 @@
 .templateux-navbar .templateux-menu ul li ul li {
     padding: 4px 15px;
     line-height: 1.5rem;
-}
-
-ul.submenu {
-    position: absolute;
-    top: 105%;
-    left: 3%;
-    border: none;
-    max-height: 200%;
-    max-width: 10%;
-}
-
-ul.submenu2 {
-    position: absolute;
-    top: 3%;
-    left: 120%;
-    border: none;
-}
-
-ul.submenu3 {
-    position: absolute;
-    top: 0%;
-    left: 100%;
-    border: none;
-    max-width: 10%;
 }
 
 @media (min-width:780px) {
@@ -239,8 +269,6 @@ ul.cloned-templateux-menu li {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-
 
 #mobile-menu span svg {
     float: right;
