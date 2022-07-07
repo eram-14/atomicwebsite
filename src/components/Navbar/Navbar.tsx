@@ -72,7 +72,7 @@ function Navbar() {
                           onMouseEnter={() => setShow2(true)}
                           onMouseLeave={drop2}
                         >
-                          <a href="#" className="sf-with-ul">Service 3<span style={{ float: 'right' }}><FaAngleRight /></span></a>
+                          <a href="#" className="sf-with-ul">Service 3<span className='droparr'  style={{ float: 'right' ,marginTop:'6px'}}><FaAngleRight /></span></a>
                           {show2 ? <>
                             <ul className='submenu2' >
                               <li><a href="#">Service 1</a></li>
@@ -81,7 +81,7 @@ function Navbar() {
                                 onMouseEnter={() => setShow3(true)}
                                 onMouseLeave={() => setShow3(false)}
                               >
-                                <a href="#" className="sf-with-ul">Service 3<span style={{ float: 'right' }}><FaAngleRight /></span></a>
+                                <a href="#" className="sf-with-ul">Service 3<span  style={{ float: 'right' }}><FaAngleRight /></span></a>
                                 {show3 ?
                                   <>
                                     <ul className='submenu3' >
