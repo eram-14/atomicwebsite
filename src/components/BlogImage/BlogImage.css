@@ -36,3 +36,37 @@
     text-align: center;
     display: inline-block;
 }
+
+
+/* slider */
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: visible !important;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.swiper-pagination-bullet {
+    display: inline-block;
+    color: #0389ff;
+    background-color: white;
+    opacity: 1;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #0389ff;
+    color: white;
+    border: 1px solid #0389ff;
+}
+
+span.swiper-pagination-bullet {
+    font-size: 22px;
+}
