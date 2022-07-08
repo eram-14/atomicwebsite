@@ -45,7 +45,7 @@ svg {
     line-height: 1.5;
 }
 
-@media (max-width: 1088px) {
+@media (max-width: 1135px) {
     .btndown {
         white-space: normal;
     }

@@ -250,7 +250,7 @@ ul.submenu3 {
     line-height: 1.5rem;
 }
 
-@media (min-width:780px) {
+@media (min-width:768px) {
     .resp {
         display: none !important;
     }
