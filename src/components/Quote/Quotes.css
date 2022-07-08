@@ -22,10 +22,10 @@
 
 
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
+.quotesSwiper .swiper-horizontal>.swiper-pagination-bullets,
+.quotesSwiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.quotesSwiper .swiper-pagination-custom,
+.quotesSwiper .swiper-pagination-fraction {
     left: 0;
     width: 100%;
     text-align: center;
@@ -33,7 +33,7 @@
     position: relative;
 }
 
-.swiper-pagination-bullet-active {
+.quotesSwiper .swiper-pagination-bullet-active {
     opacity: var(--swiper-pagination-bullet-opacity, 1);
     background:black;
 }

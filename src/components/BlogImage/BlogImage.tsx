@@ -19,7 +19,7 @@ const BlogImage = () => {
         },
     };
     return (
-        <div className="templateux-section">
+        <div className="blog">
             <div className="container">
                 <Swiper
                     cssMode={true}
@@ -29,7 +29,7 @@ const BlogImage = () => {
                     mousewheel={true}
                     keyboard={true}
                     modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-                    className="mySwiper"
+                    className="swiperBlog"
                 >
                     <SwiperSlide>
                         <SingleSlide/>

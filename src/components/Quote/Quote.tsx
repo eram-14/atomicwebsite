@@ -23,7 +23,7 @@ function Quote() {
                 clickable: true,
               }}
               modules={[Pagination]}
-              className="mySwiper"
+              className="quotesSwiper"
             >
               <SwiperSlide><div className="item">
                 <blockquote className="block-testomonial">
