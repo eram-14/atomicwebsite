@@ -42,3 +42,10 @@
 .morefeatures a:hover {
     color: white !important;
 }
+
+.btnpara a {
+        padding: 0.375rem 1rem !important;
+}
+.btnpara a:hover {
+    color: white !important
+}

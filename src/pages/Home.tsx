@@ -13,7 +13,7 @@ function Home() {
             <Cover />
             <MidSection />
             <GoodDesign />
-            <MoreFeatures subheading='More Features' bg='bg-light'/>
+            <MoreFeatures subheading='More Features' bg='bg-light' dispbtn='block' disppara={'none'}/>
             <ImageGallary />
             <BgPrimary />
             <Quote />

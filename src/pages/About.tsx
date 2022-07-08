@@ -10,7 +10,7 @@ const About = () => {
       <CoverCommon coln='col-md-8' heading='About' subheading='When she reached the first hills of the italic mountains.'/>
       <GoodDesign/>
       <GoodTeam />
-      <MoreFeatures heading='Features' />
+      <MoreFeatures heading='Features' dispbtn={'none'} disppara={'none'}/>
     </>
   )
 }

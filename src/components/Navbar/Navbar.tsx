@@ -52,8 +52,10 @@ function Navbar() {
                   color: isActive ? 'black' : 'gray',
                 })} to='/about' className="animsition-link">About</NavLink></li>
                 <li className='listsub1'>
-                  <a href="services.html" className="animsition-link sf-with-ul">Services
-                    <span><FaAngleDown className='arrowdown' /></span></a>
+                  <NavLink style={({ isActive }) => ({
+                    color: isActive ? 'black' : 'gray',
+                  })} to='/services' className="animsition-link sf-with-ul">Services
+                    <span><FaAngleDown className='arrowdown' /></span></NavLink>
 
                   <ul className='submenu'>
                     <li><a href="#">Service 1</a></li>

@@ -12,11 +12,21 @@ import { ImLoop2 } from "react-icons/im";
 type propsFeatures = {
     heading?: string,
     subheading?: string,
-    bg?: string
+    bg?: string,
+    dispbtn: string
+    disppara: string
 }
 
 
-function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
+function MoreFeatures({ heading, subheading, bg, dispbtn, disppara }: propsFeatures) {
+
+    const stylebutton = {
+        display: dispbtn
+    }
+
+    const stylepara = {
+        display: disppara
+    }
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -38,6 +48,7 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Regular Update</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
@@ -47,6 +58,7 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Infinite Posibilities</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
@@ -56,6 +68,7 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Good Security</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
@@ -65,6 +78,7 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Orange for Carrots</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
@@ -74,6 +88,7 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Intuitive Thinking</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
@@ -83,13 +98,15 @@ function MoreFeatures({ heading, subheading, bg }: propsFeatures) {
                             <div className="media-body">
                                 <h3 className="h5 mb-4">Play Video</h3>
                                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                                <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row" style={stylebutton} >
                     <div className="col-md-12 text-center" data-aos="fade-up" data-aos-delay="100">
-                        <p className='morefeatures'><a href="#" className="btn btn-black py-3 px-4">{subheading}</a></p>
+                        <p className='morefeatures'><a  href="#" className="btn btn-black py-3 px-4">{subheading}</a></p>
+                        <p style={stylepara} className='btnpara'><a href="#" className="btn btn-sm btn-primary px-3">Read More</a></p>
                     </div>
                 </div>
             </div>
